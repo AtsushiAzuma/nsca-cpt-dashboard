@@ -2,10 +2,10 @@ window.PROJECT_DATA = {
   "meta": {
     "updated": "2026-09-22",
     "phase": "第1週「本人の一次情報を整理」完了。第2週「読者と商品の約束を確定」準備済み",
-    "nextTaskId": "T-004",
+    "nextTaskId": "T-006",
     "weeklyCapacity": 180,
     "plannedMinutes": 0,
-    "doneCount": 10
+    "doneCount": 11
   },
   "roadmap": [
     {
@@ -52,16 +52,6 @@ window.PROJECT_DATA = {
     }
   ],
   "tasks": [
-    {
-      "id": "T-004",
-      "status": "READY",
-      "priority": "P1",
-      "title": "読者の悩みを3件に絞る",
-      "done": "公開情報と本人経験を分けて、悩み候補上位3件を記録",
-      "estimate": "60分",
-      "dependency": "T-001",
-      "bucket": "次週以降"
-    },
     {
       "id": "T-006",
       "status": "READY",
@@ -114,7 +104,7 @@ window.PROJECT_DATA = {
     },
     {
       "id": "T-011",
-      "status": "INBOX",
+      "status": "READY",
       "priority": "P2",
       "title": "無料記事1本目を執筆する",
       "done": "1つの悩みを解決し、商品への自然な導線がある",
@@ -181,6 +171,16 @@ window.PROJECT_DATA = {
       "estimate": "30分",
       "dependency": "T-014、T-016",
       "bucket": "次週以降"
+    },
+    {
+      "id": "T-004",
+      "status": "DONE",
+      "priority": "P1",
+      "title": "読者の悩みを3件に絞る",
+      "done": "research/EVIDENCE-LEDGER.md`のC2〜C5と「T-004 読者の悩み候補」。公開情報・本人経験・検証上の限界を分離",
+      "estimate": "—",
+      "dependency": "なし",
+      "bucket": "完了"
     },
     {
       "id": "T-005",
