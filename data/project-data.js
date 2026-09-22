@@ -2,10 +2,10 @@ window.PROJECT_DATA = {
   "meta": {
     "updated": "2026-09-22",
     "phase": "第1週「本人の一次情報を整理」完了。第2週「読者と商品の約束を確定」準備済み",
-    "nextTaskId": "T-005",
+    "nextTaskId": "T-004",
     "weeklyCapacity": 180,
     "plannedMinutes": 0,
-    "doneCount": 9
+    "doneCount": 10
   },
   "roadmap": [
     {
@@ -54,7 +54,7 @@ window.PROJECT_DATA = {
   "tasks": [
     {
       "id": "T-004",
-      "status": "INBOX",
+      "status": "READY",
       "priority": "P1",
       "title": "読者の悩みを3件に絞る",
       "done": "公開情報と本人経験を分けて、悩み候補上位3件を記録",
@@ -63,18 +63,8 @@ window.PROJECT_DATA = {
       "bucket": "次週以降"
     },
     {
-      "id": "T-005",
-      "status": "INBOX",
-      "priority": "P0",
-      "title": "現行の試験情報を公式情報で確認する",
-      "done": "URL、確認日、観察事実、原稿への影響を台帳へ記録",
-      "estimate": "60分",
-      "dependency": "なし",
-      "bucket": "次週以降"
-    },
-    {
       "id": "T-006",
-      "status": "INBOX",
+      "status": "READY",
       "priority": "P1",
       "title": "30日計画の4週間構成を作る",
       "done": "各週の目的と7日分の行動がある",
@@ -191,6 +181,16 @@ window.PROJECT_DATA = {
       "estimate": "30分",
       "dependency": "T-014、T-016",
       "bucket": "次週以降"
+    },
+    {
+      "id": "T-005",
+      "status": "DONE",
+      "priority": "P1",
+      "title": "現行の試験情報を公式情報で確認する",
+      "done": "research/EVIDENCE-LEDGER.md`のO1〜O8と原稿への反映判断",
+      "estimate": "—",
+      "dependency": "なし",
+      "bucket": "完了"
     },
     {
       "id": "T-003",
