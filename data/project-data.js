@@ -1,8 +1,8 @@
 window.PROJECT_DATA = {
   "meta": {
     "updated": "2026-09-22",
-    "phase": "第1週「本人の一次情報を整理」",
-    "nextTaskId": "R-001",
+    "phase": "第1週「本人の一次情報を整理」完了。第2週「読者と商品の約束を確定」準備済み",
+    "nextTaskId": "T-005",
     "weeklyCapacity": 180,
     "plannedMinutes": 0,
     "doneCount": 9
