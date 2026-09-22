@@ -2,10 +2,10 @@ window.PROJECT_DATA = {
   "meta": {
     "updated": "2026-09-22",
     "phase": "第1週「本人の一次情報を整理」",
-    "nextTaskId": "T-003",
+    "nextTaskId": "R-001",
     "weeklyCapacity": 180,
-    "plannedMinutes": 30,
-    "doneCount": 8
+    "plannedMinutes": 0,
+    "doneCount": 9
   },
   "roadmap": [
     {
@@ -52,16 +52,6 @@ window.PROJECT_DATA = {
     }
   ],
   "tasks": [
-    {
-      "id": "T-003",
-      "status": "READY",
-      "priority": "P1",
-      "title": "商品の約束を1文にする",
-      "done": "対象読者、解決する課題、購入後の変化を1文で表現",
-      "estimate": "30分",
-      "dependency": "T-001",
-      "bucket": "今週"
-    },
     {
       "id": "T-004",
       "status": "INBOX",
@@ -201,6 +191,16 @@ window.PROJECT_DATA = {
       "estimate": "30分",
       "dependency": "T-014、T-016",
       "bucket": "次週以降"
+    },
+    {
+      "id": "T-003",
+      "status": "DONE",
+      "priority": "P1",
+      "title": "商品の約束を1文にする",
+      "done": "content/PRODUCT-OUTLINE.md`の「約束する成果」。対象読者・課題・購入当日の行動を明示",
+      "estimate": "—",
+      "dependency": "なし",
+      "bucket": "完了"
     },
     {
       "id": "T-002",
