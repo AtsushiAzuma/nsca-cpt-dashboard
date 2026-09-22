@@ -2,10 +2,10 @@ window.PROJECT_DATA = {
   "meta": {
     "updated": "2026-09-22",
     "phase": "第1週「本人の一次情報を整理」",
-    "nextTaskId": "T-001",
+    "nextTaskId": "T-002",
     "weeklyCapacity": 180,
-    "plannedMinutes": 150,
-    "doneCount": 5
+    "plannedMinutes": 90,
+    "doneCount": 6
   },
   "roadmap": [
     {
@@ -53,16 +53,6 @@ window.PROJECT_DATA = {
   ],
   "tasks": [
     {
-      "id": "T-001",
-      "status": "READY",
-      "priority": "P0",
-      "title": "合格までの時系列を記録する",
-      "done": "受験理由から試験直前までを、分かる範囲で時系列化。不明は不明と記載",
-      "estimate": "60分",
-      "dependency": "なし",
-      "bucket": "今週"
-    },
-    {
       "id": "T-002",
       "status": "READY",
       "priority": "P0",
@@ -74,7 +64,7 @@ window.PROJECT_DATA = {
     },
     {
       "id": "T-003",
-      "status": "INBOX",
+      "status": "READY",
       "priority": "P1",
       "title": "商品の約束を1文にする",
       "done": "対象読者、解決する課題、購入後の変化を1文で表現",
@@ -221,6 +211,16 @@ window.PROJECT_DATA = {
       "estimate": "30分",
       "dependency": "T-014、T-016",
       "bucket": "次週以降"
+    },
+    {
+      "id": "T-001",
+      "status": "DONE",
+      "priority": "P1",
+      "title": "合格までの時系列を記録する",
+      "done": "project/T-001-TIMELINE.md`。本人申告と不明事項を分けた",
+      "estimate": "—",
+      "dependency": "なし",
+      "bucket": "完了"
     },
     {
       "id": "T-000",
