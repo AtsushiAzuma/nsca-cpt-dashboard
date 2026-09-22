@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="NSCA-CPT × noteプロジェクトのWBS・ToDo・進捗ダッシュボード" />
+    <meta name="theme-color" content="#0b1324" />
+    <title>NSCA-CPT Project Board</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1324'/%3E%3Cpath d='M16 42V22h7v20zm13 0V14h7v28zm13 0V28h7v14z' fill='%236ee7b7'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">メインコンテンツへ移動</a>
+
+    <aside class="sidebar" aria-label="メインナビゲーション">
+      <a class="brand" href="#overview" aria-label="プロジェクト概要へ">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span><strong>NSCA-CPT</strong><small>PROJECT BOARD</small></span>
+      </a>
+
+      <nav class="nav-list">
+        <a class="nav-link active" href="#overview" data-section="overview">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13h6V4H4v9Zm0 7h6v-5H4v5Zm10 0h6v-9h-6v9Zm0-16v5h6V4h-6Z"/></svg>
+          概要
+        </a>
+        <a class="nav-link" href="#wbs" data-section="wbs">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v4H5V4Zm0 6h9v4H5v-4Zm0 6h12v4H5v-4Z"/></svg>
+          WBS
+        </a>
+        <a class="nav-link" href="#board" data-section="board">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h4v14H4V5Zm6 0h4v9h-4V5Zm6 0h4v11h-4V5Z"/></svg>
+          タスクボード
+        </a>
+        <a class="nav-link" href="#todo" data-section="todo">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9.2 16.2-4.4-4.4L3.4 13.2 9.2 19 21 7.2l-1.4-1.4L9.2 16.2Z"/></svg>
+          ToDo
+        </a>
+      </nav>
+
+      <div class="sidebar-foot">
+        <span class="sync-dot" aria-hidden="true"></span>
+        <div><strong>GitHub Ready</strong><small>Markdownから自動生成</small></div>
+      </div>
+    </aside>
+
+    <main id="main" class="main-shell">
+      <header class="topbar">
+        <button class="menu-button" id="menuButton" type="button" aria-label="メニューを開く" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <div>
+          <p class="eyebrow">NSCA-CPT × NOTE</p>
+          <h1>プロジェクト進行状況</h1>
+        </div>
+        <div class="topbar-meta">
+          <span id="lastUpdated">更新日を確認中</span>
+          <span class="status-pill"><i></i>進行中</span>
+        </div>
+      </header>
+
+      <div class="content-wrap">
+        <section id="overview" class="page-section overview-section" aria-labelledby="overviewTitle">
+          <div class="section-heading compact-heading">
+            <div>
+              <p class="section-kicker">OVERVIEW</p>
+              <h2 id="overviewTitle">今週のフォーカス</h2>
+            </div>
+            <span class="phase-badge" id="phaseBadge">第1週</span>
+          </div>
+
+          <div class="overview-grid">
+            <article class="progress-card dark-card">
+              <div class="card-label">全体進捗</div>
+              <div class="progress-layout">
+                <div class="progress-ring" id="progressRing" role="img" aria-label="全体進捗">
+                  <div><strong id="progressPercent">0%</strong><span>完了</span></div>
+                </div>
+                <div class="progress-copy">
+                  <strong><span id="doneCount">0</span> / <span id="totalCount">0</span> タスク</strong>
+                  <p>初回販売までの全工程</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="next-card accent-card">
+              <div class="card-label">NEXT ACTION</div>
+              <div class="next-id" id="nextTaskId">—</div>
+              <h3 id="nextTaskTitle">次のタスクを読み込み中</h3>
+              <p id="nextTaskDone">完了条件を確認中</p>
+              <div class="next-meta">
+                <span id="nextTaskEstimate">—分</span>
+                <span id="nextTaskPriority">—</span>
+              </div>
+            </article>
+
+            <article class="capacity-card">
+              <div class="card-label">今週の作業枠</div>
+              <div class="capacity-number"><strong id="plannedMinutes">0</strong><span>/ 180分</span></div>
+              <div class="capacity-track" aria-hidden="true"><i id="capacityBar"></i></div>
+              <div class="capacity-foot"><span>計画済み</span><strong id="bufferMinutes">180分の余白</strong></div>
+            </article>
+          </div>
+
+          <div class="stat-row" aria-label="タスク状態サマリー">
+            <div><span class="stat-dot ready"></span><strong id="readyCount">0</strong><small>着手可能</small></div>
+            <div><span class="stat-dot doing"></span><strong id="doingCount">0</strong><small>作業中</small></div>
+            <div><span class="stat-dot review"></span><strong id="reviewCount">0</strong><small>確認待ち</small></div>
+            <div><span class="stat-dot blocked"></span><strong id="blockedCount">0</strong><small>ブロック</small></div>
+          </div>
+        </section>
+
+        <section id="wbs" class="page-section" aria-labelledby="wbsTitle">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">ROADMAP</p>
+              <h2 id="wbsTitle">6週間のWBS</h2>
+            </div>
+            <p class="section-note">週3時間・合計18時間</p>
+          </div>
+          <div class="panel wbs-panel">
+            <div class="wbs-head" aria-hidden="true">
+              <span>フェーズ</span>
+              <div><i>W1</i><i>W2</i><i>W3</i><i>W4</i><i>W5</i><i>W6</i></div>
+              <span>進捗</span>
+            </div>
+            <div id="wbsRows" class="wbs-rows"></div>
+          </div>
+        </section>
+
+        <section id="board" class="page-section" aria-labelledby="boardTitle">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">WORKFLOW</p>
+              <h2 id="boardTitle">タスクボード</h2>
+            </div>
+            <p class="section-note">同時進行は1件まで</p>
+          </div>
+          <div class="board-grid" id="taskBoard"></div>
+        </section>
+
+        <section id="todo" class="page-section" aria-labelledby="todoTitle">
+          <div class="section-heading todo-heading">
+            <div>
+              <p class="section-kicker">ALL TASKS</p>
+              <h2 id="todoTitle">ToDo一覧</h2>
+            </div>
+            <div class="table-actions">
+              <label class="search-box">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 20-4.35-4.35a8 8 0 1 0-1.4 1.4L19.6 21 21 20ZM5 11a6 6 0 1 1 12 0 6 6 0 0 1-12 0Z"/></svg>
+                <span class="sr-only">タスクを検索</span>
+                <input id="taskSearch" type="search" placeholder="タスクを検索" />
+              </label>
+              <select id="statusFilter" aria-label="状態で絞り込む">
+                <option value="ALL">すべての状態</option>
+                <option value="READY">着手可能</option>
+                <option value="DOING">作業中</option>
+                <option value="INBOX">未整理・待機</option>
+                <option value="REVIEW">確認待ち</option>
+                <option value="BLOCKED">ブロック</option>
+                <option value="DONE">完了</option>
+              </select>
+            </div>
+          </div>
+          <div class="panel table-panel">
+            <div class="task-table" role="table" aria-label="全タスク">
+              <div class="task-table-head" role="row">
+                <span role="columnheader">ID</span><span role="columnheader">タスク</span><span role="columnheader">状態</span><span role="columnheader">優先度</span><span role="columnheader">見積</span>
+              </div>
+              <div id="taskTableBody"></div>
+            </div>
+            <div class="empty-state" id="emptyState" hidden>条件に一致するタスクはありません。</div>
+          </div>
+        </section>
+      </div>
+
+      <footer>
+        <span>Source: project/TASKS.md + project/ROADMAP.md</span>
+        <span>NSCA-CPT Project Board</span>
+      </footer>
+    </main>
+
+    <div class="sidebar-scrim" id="sidebarScrim" hidden></div>
+    <script src="./data/project-data.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
