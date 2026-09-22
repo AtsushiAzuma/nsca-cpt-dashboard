@@ -5,7 +5,7 @@ window.PROJECT_DATA = {
     "nextTaskId": "T-002",
     "weeklyCapacity": 180,
     "plannedMinutes": 90,
-    "doneCount": 6
+    "doneCount": 7
   },
   "roadmap": [
     {
@@ -218,6 +218,16 @@ window.PROJECT_DATA = {
       "priority": "P1",
       "title": "合格までの時系列を記録する",
       "done": "project/T-001-TIMELINE.md`。本人申告と不明事項を分けた",
+      "estimate": "—",
+      "dependency": "なし",
+      "bucket": "完了"
+    },
+    {
+      "id": "T-022",
+      "status": "DONE",
+      "priority": "P1",
+      "title": "添付の資格証明書の記載事項を確認する",
+      "done": "JSONとPDFの資格名・認定日・有効期限をBRIEFに記録。個人識別子・署名値は保存せず、独立検証未実施と明記",
       "estimate": "—",
       "dependency": "なし",
       "bucket": "完了"
