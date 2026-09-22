@@ -5,7 +5,7 @@ window.PROJECT_DATA = {
     "nextTaskId": "T-001",
     "weeklyCapacity": 180,
     "plannedMinutes": 150,
-    "doneCount": 2
+    "doneCount": 4
   },
   "roadmap": [
     {
@@ -223,26 +223,6 @@ window.PROJECT_DATA = {
       "bucket": "次週以降"
     },
     {
-      "id": "T-019",
-      "status": "DOING",
-      "priority": "P1",
-      "title": "GitHub Pagesへダッシュボードを公開する",
-      "done": "企画資料を非公開に保ち、公開用サイトのURLと表示を確認",
-      "estimate": "60分",
-      "dependency": "公開用リポジトリの明示承認済み",
-      "bucket": "プロジェクト運用"
-    },
-    {
-      "id": "T-020",
-      "status": "INBOX",
-      "priority": "P1",
-      "title": "Codex作業の限定的な自動コミット・公開導線を整える",
-      "done": "変更ファイルだけをコミットし、公開用には `dist/` だけ同期する手順と検証がある",
-      "estimate": "45分",
-      "dependency": "T-019",
-      "bucket": "プロジェクト運用"
-    },
-    {
       "id": "T-000",
       "status": "DONE",
       "priority": "P1",
@@ -258,6 +238,26 @@ window.PROJECT_DATA = {
       "priority": "P1",
       "title": "WBS・ToDo・進捗ダッシュボードを構築する",
       "done": "dist/`、データ生成スクリプト、GitHub Pagesワークフロー",
+      "estimate": "—",
+      "dependency": "なし",
+      "bucket": "完了"
+    },
+    {
+      "id": "T-019",
+      "status": "DONE",
+      "priority": "P1",
+      "title": "GitHub Pagesへダッシュボードを公開する",
+      "done": "公開用リポジトリと表示確認済みのPages URL",
+      "estimate": "—",
+      "dependency": "なし",
+      "bucket": "完了"
+    },
+    {
+      "id": "T-020",
+      "status": "DONE",
+      "priority": "P1",
+      "title": "Codex作業の限定的な自動コミット・公開導線を整える",
+      "done": "scripts/publish-codex-work.ps1` と `AGENTS.md` の運用ルール",
       "estimate": "—",
       "dependency": "なし",
       "bucket": "完了"
