@@ -2,10 +2,10 @@ window.PROJECT_DATA = {
   "meta": {
     "updated": "2026-09-22",
     "phase": "第1週「本人の一次情報を整理」",
-    "nextTaskId": "T-002",
+    "nextTaskId": "T-003",
     "weeklyCapacity": 180,
-    "plannedMinutes": 90,
-    "doneCount": 7
+    "plannedMinutes": 30,
+    "doneCount": 8
   },
   "roadmap": [
     {
@@ -52,16 +52,6 @@ window.PROJECT_DATA = {
     }
   ],
   "tasks": [
-    {
-      "id": "T-002",
-      "status": "READY",
-      "priority": "P0",
-      "title": "問題集のやりこみ方を具体化する",
-      "done": "周回、復習、誤答処理、理解できない場合の対応を行動単位で記録",
-      "estimate": "60分",
-      "dependency": "なし",
-      "bucket": "今週"
-    },
     {
       "id": "T-003",
       "status": "READY",
@@ -211,6 +201,16 @@ window.PROJECT_DATA = {
       "estimate": "30分",
       "dependency": "T-014、T-016",
       "bucket": "次週以降"
+    },
+    {
+      "id": "T-002",
+      "status": "DONE",
+      "priority": "P1",
+      "title": "問題集のやりこみ方を具体化する",
+      "done": "project/T-002-PRACTICE.md`。1〜5周目と未記憶の手順を分けた",
+      "estimate": "—",
+      "dependency": "なし",
+      "bucket": "完了"
     },
     {
       "id": "T-001",
