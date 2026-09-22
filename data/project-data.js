@@ -5,7 +5,7 @@ window.PROJECT_DATA = {
     "nextTaskId": "T-001",
     "weeklyCapacity": 180,
     "plannedMinutes": 150,
-    "doneCount": 4
+    "doneCount": 5
   },
   "roadmap": [
     {
@@ -258,6 +258,16 @@ window.PROJECT_DATA = {
       "priority": "P1",
       "title": "Codex作業の限定的な自動コミット・公開導線を整える",
       "done": "scripts/publish-codex-work.ps1` と `AGENTS.md` の運用ルール",
+      "estimate": "—",
+      "dependency": "なし",
+      "bucket": "完了"
+    },
+    {
+      "id": "T-021",
+      "status": "DONE",
+      "priority": "P1",
+      "title": "公開ダッシュボードの更新キャッシュを避ける",
+      "done": "データ内容のハッシュを付けた読み込みURLを自動生成",
       "estimate": "—",
       "dependency": "なし",
       "bucket": "完了"
