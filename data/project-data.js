@@ -1,11 +1,11 @@
 window.PROJECT_DATA = {
   "meta": {
     "updated": "2026-09-23",
-    "phase": "30日計画・復習ルール・無料記事1本目の初稿を作成済み。付属物の残りを制作する段階",
-    "nextTaskId": "T-007",
+    "phase": "無料記事3本・有料記事1本と付属物の原稿完成。内容レビュー済み、承認・公開設定待ち",
+    "nextTaskId": "T-016",
     "weeklyCapacity": 180,
     "plannedMinutes": 180,
-    "doneCount": 14
+    "doneCount": 24
   },
   "roadmap": [
     {
@@ -20,28 +20,28 @@ window.PROJECT_DATA = {
       "purpose": "読者と商品の約束を確定",
       "deliverable": "読者課題上位3件、商品コンセプト、対象外",
       "done": "誰の何を解決するか1文で説明できる",
-      "progress": 0
+      "progress": 100
     },
     {
       "week": 3,
       "purpose": "商品の骨組みを作成",
       "deliverable": "30日計画、30・60・90分プランの初稿",
       "done": "30日分の行動が日単位で確認できる",
-      "progress": 0
+      "progress": 100
     },
     {
       "week": 4,
       "purpose": "付属物を完成",
       "deliverable": "進捗表、復習ログ、復帰ルール、試験前チェック",
       "done": "購入当日に記入と実行を開始できる",
-      "progress": 0
+      "progress": 100
     },
     {
       "week": 5,
       "purpose": "販売素材を作成",
       "deliverable": "無料記事1本、販売ページ、プロフィール文",
       "done": "対象者、内容、対象外、根拠が説明されている",
-      "progress": 0
+      "progress": 100
     },
     {
       "week": 6,
@@ -83,84 +83,34 @@ window.PROJECT_DATA = {
       "bucket": "今週"
     },
     {
-      "id": "T-007",
-      "status": "READY",
-      "priority": "P1",
-      "title": "30分・60分・90分プランを作る",
-      "done": "同じ学習目的を時間別に調整できる",
-      "estimate": "45分",
-      "dependency": "T-006",
-      "bucket": "次週以降"
-    },
-    {
-      "id": "T-008",
-      "status": "READY",
-      "priority": "P1",
-      "title": "進捗表を作る",
-      "done": "日付、予定、実績、理解度、次の行動を記録できる",
-      "estimate": "45分",
-      "dependency": "T-006",
-      "bucket": "次週以降"
-    },
-    {
-      "id": "T-010",
-      "status": "READY",
-      "priority": "P1",
-      "title": "試験前7日チェックを作る",
-      "done": "7日間の確認行動が具体的で、保証表現がない",
-      "estimate": "45分",
-      "dependency": "T-005、T-006",
-      "bucket": "次週以降"
-    },
-    {
-      "id": "T-012",
-      "status": "INBOX",
-      "priority": "P1",
-      "title": "販売ページを作る",
-      "done": "対象者、得られるもの、対象外、付属物、注意事項がある",
-      "estimate": "60分",
-      "dependency": "T-007〜T-010",
-      "bucket": "次週以降"
-    },
-    {
-      "id": "T-013",
-      "status": "INBOX",
-      "priority": "P2",
-      "title": "noteプロフィール文を作る",
-      "done": "取得年、資格状態、発信対象を正確に記載",
-      "estimate": "30分",
-      "dependency": "T-003",
-      "bucket": "次週以降"
-    },
-    {
       "id": "T-014",
-      "status": "INBOX",
+      "status": "BLOCKED",
       "priority": "P2",
       "title": "noteアカウントを作成・初期設定する",
       "done": "URLが記録され、プロフィールが設定されている",
       "estimate": "30分",
       "dependency": "T-013",
-      "bucket": "次週以降"
+      "bucket": "承認・公開待ち"
     },
     {
       "id": "T-015",
-      "status": "INBOX",
+      "status": "REVIEW",
       "priority": "P0",
       "title": "公開前品質レビューを行う",
       "done": "重大項目がすべて確認済み",
       "estimate": "60分",
       "dependency": "T-011、T-012",
-      "bucket": "次週以降"
+      "bucket": "承認・公開待ち"
     },
     {
       "id": "T-016",
-      "status": "INBOX",
+      "status": "REVIEW",
       "priority": "P0",
       "title": "価格と公開原稿の最終承認を得る",
       "done": "ユーザーが対象原稿と価格を明示承認",
       "estimate": "15分",
-      "dependency": "T-015",
-      "bucket": "次週以降"
+      "dependency": "T-015の内容レビュー実施（承認後に最終判定）",
+      "bucket": "承認・公開待ち"
     },
     {
       "id": "T-017",
@@ -170,7 +120,107 @@ window.PROJECT_DATA = {
       "done": "承認済み原稿が公開され、URLが記録されている",
       "estimate": "30分",
       "dependency": "T-014、T-016",
-      "bucket": "次週以降"
+      "bucket": "承認・公開待ち"
+    },
+    {
+      "id": "T-007",
+      "status": "DONE",
+      "priority": "P1",
+      "title": "30分・60分・90分プランを作る",
+      "done": "reviews/FINAL-DELIVERY.md参照",
+      "estimate": "—",
+      "dependency": "なし",
+      "bucket": "完了"
+    },
+    {
+      "id": "T-008",
+      "status": "DONE",
+      "priority": "P1",
+      "title": "進捗表を作る",
+      "done": "reviews/FINAL-DELIVERY.md参照",
+      "estimate": "—",
+      "dependency": "なし",
+      "bucket": "完了"
+    },
+    {
+      "id": "T-010",
+      "status": "DONE",
+      "priority": "P1",
+      "title": "試験前7日チェックを作る",
+      "done": "reviews/FINAL-DELIVERY.md参照",
+      "estimate": "—",
+      "dependency": "なし",
+      "bucket": "完了"
+    },
+    {
+      "id": "T-012",
+      "status": "DONE",
+      "priority": "P1",
+      "title": "販売ページを作る",
+      "done": "reviews/FINAL-DELIVERY.md参照",
+      "estimate": "—",
+      "dependency": "なし",
+      "bucket": "完了"
+    },
+    {
+      "id": "T-013",
+      "status": "DONE",
+      "priority": "P1",
+      "title": "noteプロフィール文を作る",
+      "done": "reviews/FINAL-DELIVERY.md参照",
+      "estimate": "—",
+      "dependency": "なし",
+      "bucket": "完了"
+    },
+    {
+      "id": "T-023",
+      "status": "DONE",
+      "priority": "P1",
+      "title": "無料記事2本目を執筆する",
+      "done": "reviews/FINAL-DELIVERY.md参照",
+      "estimate": "—",
+      "dependency": "なし",
+      "bucket": "完了"
+    },
+    {
+      "id": "T-024",
+      "status": "DONE",
+      "priority": "P1",
+      "title": "無料記事3本目を執筆する",
+      "done": "reviews/FINAL-DELIVERY.md参照",
+      "estimate": "—",
+      "dependency": "なし",
+      "bucket": "完了"
+    },
+    {
+      "id": "T-025",
+      "status": "DONE",
+      "priority": "P1",
+      "title": "有料記事を1本に統合し閲覧用成果物を作る",
+      "done": "reviews/FINAL-DELIVERY.md参照",
+      "estimate": "—",
+      "dependency": "なし",
+      "bucket": "完了"
+    },
+    {
+      "id": "T-026",
+      "status": "DONE",
+      "priority": "P1",
+      "title": "公開後の計測と初期設定の準備をする",
+      "done": "reviews/FINAL-DELIVERY.md参照",
+      "estimate": "—",
+      "dependency": "なし",
+      "bucket": "完了"
+    },
+    {
+      "id": "T-027",
+      "status": "DONE",
+      "priority": "P1",
+      "title": "ダッシュボードの工程別進捗を実タスクへ対応させる",
+      "done": "reviews/FINAL-DELIVERY.md参照",
+      "estimate": "—",
+      "dependency": "なし",
+      "bucket": "完了"
     },
     {
       "id": "T-004",
