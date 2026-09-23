@@ -5,7 +5,7 @@ window.PROJECT_DATA = {
     "nextTaskId": "T-016",
     "weeklyCapacity": 180,
     "plannedMinutes": 180,
-    "doneCount": 26
+    "doneCount": 27
   },
   "roadmap": [
     {
@@ -140,6 +140,16 @@ window.PROJECT_DATA = {
       "done": "content/BONUS-ASSESSMENT-PLAN.mdに665問・図解16枚の仮案を整理。実物は未制作",
       "estimate": "45分",
       "dependency": "T-028",
+      "bucket": "追加企画"
+    },
+    {
+      "id": "T-030",
+      "status": "DONE",
+      "priority": "P1",
+      "title": "仮想クライアント3名のロールプレイ教材を検討する",
+      "done": "content/ROLEPLAY-PROPOSAL.mdに3名・28回・評価基準と短い試作例を整理。全編未制作",
+      "estimate": "45分",
+      "dependency": "T-029",
       "bucket": "追加企画"
     },
     {
