@@ -5,7 +5,7 @@ window.PROJECT_DATA = {
     "nextTaskId": "T-016",
     "weeklyCapacity": 180,
     "plannedMinutes": 180,
-    "doneCount": 24
+    "doneCount": 25
   },
   "roadmap": [
     {
@@ -121,6 +121,16 @@ window.PROJECT_DATA = {
       "estimate": "30分",
       "dependency": "T-014、T-016",
       "bucket": "承認・公開待ち"
+    },
+    {
+      "id": "T-028",
+      "status": "DONE",
+      "priority": "P2",
+      "title": "購入特典の企画案を作る",
+      "done": "content/BONUS-PROPOSAL.mdに候補3件と推奨2件を整理。特典自体は未制作",
+      "estimate": "30分",
+      "dependency": "T-025",
+      "bucket": "追加企画"
     },
     {
       "id": "T-007",
