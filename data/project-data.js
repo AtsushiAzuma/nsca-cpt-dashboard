@@ -5,7 +5,7 @@ window.PROJECT_DATA = {
     "nextTaskId": "T-016",
     "weeklyCapacity": 180,
     "plannedMinutes": 180,
-    "doneCount": 35
+    "doneCount": 36
   },
   "roadmap": [
     {
@@ -121,6 +121,16 @@ window.PROJECT_DATA = {
       "estimate": "30分",
       "dependency": "T-014、T-016",
       "bucket": "承認・公開待ち"
+    },
+    {
+      "id": "T-039",
+      "status": "DONE",
+      "priority": "P1",
+      "title": "組織体制と担当・承認フローを整備する",
+      "done": "project/ORGANIZATION.mdに13役の組織図、責任分担、引継ぎ・承認手順を定義し運用文書へ接続済み",
+      "estimate": "30分",
+      "dependency": "ユーザーの組織構築依頼",
+      "bucket": "追加企画"
     },
     {
       "id": "T-028",
