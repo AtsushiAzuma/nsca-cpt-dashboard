@@ -5,7 +5,7 @@ window.PROJECT_DATA = {
     "nextTaskId": "T-016",
     "weeklyCapacity": 180,
     "plannedMinutes": 180,
-    "doneCount": 28
+    "doneCount": 32
   },
   "roadmap": [
     {
@@ -160,6 +160,46 @@ window.PROJECT_DATA = {
       "done": "content/ROLEPLAY-PAGE-PLAN.mdに60ページの台割を作成。PDF本体は未制作",
       "estimate": "30分",
       "dependency": "T-030",
+      "bucket": "追加企画"
+    },
+    {
+      "id": "T-032",
+      "status": "DONE",
+      "priority": "P1",
+      "title": "ロールプレイ28回の回答用原稿を作る",
+      "done": "解説を隠して回答できる全場面と前提を作成",
+      "estimate": "60分",
+      "dependency": "T-031",
+      "bucket": "追加企画"
+    },
+    {
+      "id": "T-033",
+      "status": "DONE",
+      "priority": "P1",
+      "title": "新人役の回答とベテラン役レビューを実施する",
+      "done": "28回の回答・場面別フィードバックを記録",
+      "estimate": "60分",
+      "dependency": "T-032",
+      "bucket": "追加企画"
+    },
+    {
+      "id": "T-034",
+      "status": "DONE",
+      "priority": "P1",
+      "title": "レビューを反映して教材を改訂・再テストする",
+      "done": "指摘対応表、改訂原稿、再テスト結果がある",
+      "estimate": "60分",
+      "dependency": "T-033",
+      "bucket": "追加企画"
+    },
+    {
+      "id": "T-035",
+      "status": "DONE",
+      "priority": "P1",
+      "title": "改訂ロールプレイの60ページPDFを作成・確認する",
+      "done": "表裏の対応と全ページの表示を検証した確認版がある",
+      "estimate": "60分",
+      "dependency": "T-034",
       "bucket": "追加企画"
     },
     {
