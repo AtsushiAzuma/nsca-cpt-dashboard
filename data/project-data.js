@@ -5,7 +5,7 @@ window.PROJECT_DATA = {
     "nextTaskId": "T-016",
     "weeklyCapacity": 180,
     "plannedMinutes": 180,
-    "doneCount": 25
+    "doneCount": 26
   },
   "roadmap": [
     {
@@ -130,6 +130,16 @@ window.PROJECT_DATA = {
       "done": "content/BONUS-PROPOSAL.mdに候補3件と推奨2件を整理。特典自体は未制作",
       "estimate": "30分",
       "dependency": "T-025",
+      "bucket": "追加企画"
+    },
+    {
+      "id": "T-029",
+      "status": "DONE",
+      "priority": "P1",
+      "title": "問題・模試・図解特典の構成を検討する",
+      "done": "content/BONUS-ASSESSMENT-PLAN.mdに665問・図解16枚の仮案を整理。実物は未制作",
+      "estimate": "45分",
+      "dependency": "T-028",
       "bucket": "追加企画"
     },
     {
