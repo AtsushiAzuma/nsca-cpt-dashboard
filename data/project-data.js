@@ -5,7 +5,7 @@ window.PROJECT_DATA = {
     "nextTaskId": "T-016",
     "weeklyCapacity": 180,
     "plannedMinutes": 180,
-    "doneCount": 33
+    "doneCount": 34
   },
   "roadmap": [
     {
@@ -210,6 +210,16 @@ window.PROJECT_DATA = {
       "done": "UXデザイナー3役の独立レビュー、5段階モデル、改善点一覧をHTMLで可視化。改善実装は行わない",
       "estimate": "60分",
       "dependency": "T-035",
+      "bucket": "追加企画"
+    },
+    {
+      "id": "T-037",
+      "status": "DONE",
+      "priority": "P1",
+      "title": "これまでの全成果物を統合HTMLで可視化する",
+      "done": "企画・調査・記事・特典・教材・レビュー・運用成果物を棚卸しし、状態と関係を一つのHTMLで確認できる",
+      "estimate": "60分",
+      "dependency": "T-036",
       "bucket": "追加企画"
     },
     {
