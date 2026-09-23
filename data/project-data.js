@@ -1,11 +1,11 @@
 window.PROJECT_DATA = {
   "meta": {
-    "updated": "2026-09-22",
-    "phase": "第1週「本人の一次情報を整理」完了。第2週「読者と商品の約束を確定」準備済み",
-    "nextTaskId": "T-006",
+    "updated": "2026-09-23",
+    "phase": "30日計画・復習ルール・無料記事1本目の初稿を作成済み。付属物の残りを制作する段階",
+    "nextTaskId": "T-007",
     "weeklyCapacity": 180,
-    "plannedMinutes": 0,
-    "doneCount": 11
+    "plannedMinutes": 180,
+    "doneCount": 14
   },
   "roadmap": [
     {
@@ -13,7 +13,7 @@ window.PROJECT_DATA = {
       "purpose": "本人の一次情報を整理",
       "deliverable": "合格までの時系列、問題集の使い方、ジム実践メモ",
       "done": "創作なしで公開可能な経験が整理されている",
-      "progress": 0
+      "progress": 100
     },
     {
       "week": 2,
@@ -54,17 +54,37 @@ window.PROJECT_DATA = {
   "tasks": [
     {
       "id": "T-006",
-      "status": "READY",
+      "status": "DONE",
       "priority": "P1",
       "title": "30日計画の4週間構成を作る",
       "done": "各週の目的と7日分の行動がある",
       "estimate": "60分",
       "dependency": "T-002、T-003、T-005",
-      "bucket": "次週以降"
+      "bucket": "今週"
+    },
+    {
+      "id": "T-009",
+      "status": "DONE",
+      "priority": "P1",
+      "title": "復習ログと復帰ルールを作る",
+      "done": "誤答・曖昧点と、遅れた日の再開方法を記録できる",
+      "estimate": "60分",
+      "dependency": "T-006",
+      "bucket": "今週"
+    },
+    {
+      "id": "T-011",
+      "status": "DONE",
+      "priority": "P2",
+      "title": "無料記事1本目を執筆する",
+      "done": "1つの悩みを解決し、商品への自然な導線がある",
+      "estimate": "60分",
+      "dependency": "T-003、T-004",
+      "bucket": "今週"
     },
     {
       "id": "T-007",
-      "status": "INBOX",
+      "status": "READY",
       "priority": "P1",
       "title": "30分・60分・90分プランを作る",
       "done": "同じ学習目的を時間別に調整できる",
@@ -74,7 +94,7 @@ window.PROJECT_DATA = {
     },
     {
       "id": "T-008",
-      "status": "INBOX",
+      "status": "READY",
       "priority": "P1",
       "title": "進捗表を作る",
       "done": "日付、予定、実績、理解度、次の行動を記録できる",
@@ -83,33 +103,13 @@ window.PROJECT_DATA = {
       "bucket": "次週以降"
     },
     {
-      "id": "T-009",
-      "status": "INBOX",
-      "priority": "P1",
-      "title": "復習ログと復帰ルールを作る",
-      "done": "誤答・曖昧点と、遅れた日の再開方法を記録できる",
-      "estimate": "60分",
-      "dependency": "T-006",
-      "bucket": "次週以降"
-    },
-    {
       "id": "T-010",
-      "status": "INBOX",
+      "status": "READY",
       "priority": "P1",
       "title": "試験前7日チェックを作る",
       "done": "7日間の確認行動が具体的で、保証表現がない",
       "estimate": "45分",
       "dependency": "T-005、T-006",
-      "bucket": "次週以降"
-    },
-    {
-      "id": "T-011",
-      "status": "READY",
-      "priority": "P2",
-      "title": "無料記事1本目を執筆する",
-      "done": "1つの悩みを解決し、商品への自然な導線がある",
-      "estimate": "60分",
-      "dependency": "T-003、T-004",
       "bucket": "次週以降"
     },
     {
