@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="NSCA-CPT × noteプロジェクトのWBS・ToDo・進捗ダッシュボード" />
+    <meta name="description" content="NSCA-CPTコンテンツ制作の進捗と成果物をスマートフォンから確認できる公開ダッシュボード" />
     <meta name="theme-color" content="#0b1324" />
-    <title>NSCA-CPT Project Board</title>
+    <title>NSCA-CPT Progress & Deliverables</title>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1324'/%3E%3Cpath d='M16 42V22h7v20zm13 0V14h7v28zm13 0V28h7v14z' fill='%236ee7b7'/%3E%3C/svg%3E" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
@@ -15,13 +15,17 @@
     <aside class="sidebar" aria-label="メインナビゲーション">
       <a class="brand" href="#overview" aria-label="プロジェクト概要へ">
         <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
-        <span><strong>NSCA-CPT</strong><small>PROJECT BOARD</small></span>
+        <span><strong>NSCA-CPT</strong><small>PROGRESS + OUTPUTS</small></span>
       </a>
 
       <nav class="nav-list">
         <a class="nav-link active" href="#overview" data-section="overview">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13h6V4H4v9Zm0 7h6v-5H4v5Zm10 0h6v-9h-6v9Zm0-16v5h6V4h-6Z"/></svg>
           概要
+        </a>
+        <a class="nav-link" href="#deliverables" data-section="deliverables">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h10l4 4v14H5V3Zm9 1.5V8h3.5L14 4.5ZM8 12h8v-2H8v2Zm0 4h8v-2H8v2Zm0 3h6v-2H8v2Z"/></svg>
+          成果物
         </a>
         <a class="nav-link" href="#wbs" data-section="wbs">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v4H5V4Zm0 6h9v4H5v-4Zm0 6h12v4H5v-4Z"/></svg>
@@ -50,7 +54,7 @@
         </button>
         <div>
           <p class="eyebrow">NSCA-CPT × NOTE</p>
-          <h1>プロジェクト進行状況</h1>
+          <h1>進捗・成果物ダッシュボード</h1>
         </div>
         <div class="topbar-meta">
           <span id="lastUpdated">更新日を確認中</span>
@@ -106,6 +110,56 @@
             <div><span class="stat-dot doing"></span><strong id="doingCount">0</strong><small>作業中</small></div>
             <div><span class="stat-dot review"></span><strong id="reviewCount">0</strong><small>確認待ち</small></div>
             <div><span class="stat-dot blocked"></span><strong id="blockedCount">0</strong><small>ブロック</small></div>
+          </div>
+        </section>
+
+        <section id="deliverables" class="page-section deliverables-section" aria-labelledby="deliverablesTitle">
+          <div class="section-heading deliverables-heading">
+            <div>
+              <p class="section-kicker">DELIVERABLES</p>
+              <h2 id="deliverablesTitle">制作した成果物</h2>
+            </div>
+            <p class="section-note">公開用の概要。販売前の本文・PDF原本・非公開メモは掲載していません</p>
+          </div>
+
+          <div class="deliverable-summary" aria-label="成果物サマリー">
+            <article><span>成果物群</span><strong id="deliverableTotal">0</strong><small>企画から運用まで</small></article>
+            <article><span>完成・検証済み</span><strong id="deliverableComplete">0</strong><small>公開用一覧で確認</small></article>
+            <article><span>ロールプレイ教材</span><strong>60<em>p</em></strong><small>3名・28セッション</small></article>
+            <article><span>UX改善点</span><strong>19</strong><small>3人の独立レビュー</small></article>
+          </div>
+
+          <div class="deliverable-progress" aria-label="成果物の成熟度">
+            <div><span>設計</span><i class="is-done"></i></div>
+            <div><span>原稿</span><i class="is-done"></i></div>
+            <div><span>AI検証</span><i class="is-done"></i></div>
+            <div><span>UX監査</span><i class="is-done"></i></div>
+            <div><span>人間検証</span><i></i></div>
+            <div><span>販売公開</span><i></i></div>
+          </div>
+
+          <div class="deliverable-actions">
+            <label class="search-box deliverable-search">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 20-4.35-4.35a8 8 0 1 0-1.4 1.4L19.6 21 21 20ZM5 11a6 6 0 1 1 12 0 6 6 0 0 1-12 0Z"/></svg>
+              <span class="sr-only">成果物を検索</span>
+              <input id="deliverableSearch" type="search" placeholder="成果物を検索" />
+            </label>
+            <select id="deliverableCategory" aria-label="成果物の分類で絞り込む">
+              <option value="ALL">すべての分類</option>
+              <option value="学習商品">学習商品</option>
+              <option value="特典">特典</option>
+              <option value="実践教材">実践教材</option>
+              <option value="検証">検証</option>
+              <option value="運用">運用</option>
+            </select>
+          </div>
+
+          <div id="deliverableGrid" class="deliverable-grid"></div>
+          <div class="empty-state deliverable-empty" id="deliverableEmpty" hidden>条件に一致する成果物はありません。</div>
+
+          <div class="public-boundary">
+            <strong>公開範囲</strong>
+            <p>この画面では成果物の名称、目的、完成度、検証状況を公開しています。有料商品本文、60ページPDF原本、個人情報、非公開の作業メモは公開していません。</p>
           </div>
         </section>
 
@@ -175,12 +229,12 @@
 
       <footer>
         <span>Source: project/TASKS.md + project/ROADMAP.md</span>
-        <span>NSCA-CPT Project Board</span>
+        <span>NSCA-CPT Progress & Deliverables</span>
       </footer>
     </main>
 
     <div class="sidebar-scrim" id="sidebarScrim" hidden></div>
-    <script src="./data/project-data.js?v=f11b9975d823"></script>
+    <script src="./data/project-data.js?v=b9dffded5265"></script>
     <script src="./app.js"></script>
   </body>
 </html>

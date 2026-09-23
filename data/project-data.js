@@ -5,7 +5,7 @@ window.PROJECT_DATA = {
     "nextTaskId": "T-016",
     "weeklyCapacity": 180,
     "plannedMinutes": 180,
-    "doneCount": 34
+    "doneCount": 35
   },
   "roadmap": [
     {
@@ -223,6 +223,16 @@ window.PROJECT_DATA = {
       "bucket": "追加企画"
     },
     {
+      "id": "T-038",
+      "status": "DONE",
+      "priority": "P1",
+      "title": "公開ダッシュボードへ成果物ビューを統合する",
+      "done": "進捗と公開用成果物一覧を1サイトでスマホ確認できる。非公開原稿・有料本文・PDF原本は公開しない",
+      "estimate": "60分",
+      "dependency": "T-037",
+      "bucket": "追加企画"
+    },
+    {
       "id": "T-007",
       "status": "DONE",
       "priority": "P1",
@@ -431,6 +441,155 @@ window.PROJECT_DATA = {
       "estimate": "—",
       "dependency": "なし",
       "bucket": "完了"
+    }
+  ],
+  "deliverables": [
+    {
+      "id": "D-01",
+      "category": "学習商品",
+      "status": "原稿完成",
+      "maturity": "完成",
+      "title": "無料記事 3本",
+      "quantity": "3 articles",
+      "summary": "開始前チェック、今日読む範囲の決め方、働きながら進める平日30分の1週間例。無料部分だけでも行動を始められる構成。",
+      "evidence": [
+        "無料で完結",
+        "対象外を明記",
+        "原稿レビュー済み"
+      ]
+    },
+    {
+      "id": "D-02",
+      "category": "学習商品",
+      "status": "原稿完成",
+      "maturity": "完成",
+      "title": "NSCA-CPT独学30日計画",
+      "quantity": "30 days",
+      "summary": "働きながら独学する初心者向けに、4分野を30日で一巡する毎日の行動を整理。30日での合格は保証しない。",
+      "evidence": [
+        "Day 1〜30",
+        "4分野を一巡",
+        "現行公式情報を参照"
+      ]
+    },
+    {
+      "id": "D-03",
+      "category": "学習商品",
+      "status": "原稿完成",
+      "maturity": "完成",
+      "title": "学習支援ツール",
+      "quantity": "5 tools",
+      "summary": "30・60・90分プラン、30日進捗表、復習ログ、遅れた日の復帰ルール、試験前7日チェックを一式化。",
+      "evidence": [
+        "時間別プラン",
+        "復習・再開",
+        "試験前確認"
+      ]
+    },
+    {
+      "id": "D-04",
+      "category": "特典",
+      "status": "設計完了",
+      "maturity": "企画",
+      "title": "単元別問題・模試・図解資料集",
+      "quantity": "665 Q + 16 visuals",
+      "summary": "単元別200問、155問の模試3回、単元別図解16点の構成案。現時点では設計成果物で、問題と図解の実物は未制作。",
+      "evidence": [
+        "単元別200問",
+        "模試465問",
+        "図解16点",
+        "実物は未制作"
+      ]
+    },
+    {
+      "id": "D-05",
+      "category": "実践教材",
+      "status": "PDF完成",
+      "maturity": "完成",
+      "title": "仮想クライアント・ロールプレイ教材",
+      "quantity": "60 pages",
+      "summary": "仮想クライアント3名を担当し、初期計画、トレーニング技術、評価を28セッションで経験するA4両面教材。",
+      "evidence": [
+        "3ペルソナ",
+        "28セッション",
+        "表面で回答・裏面で確認",
+        "A4・60ページ"
+      ]
+    },
+    {
+      "id": "D-06",
+      "category": "検証",
+      "status": "検証済み",
+      "maturity": "AI検証",
+      "title": "新人・ベテラントレーナー検証",
+      "quantity": "84 answers",
+      "summary": "新人役が全28場面・84問へ回答し、ベテラン役が教材と答案をレビュー。改訂後に重点12場面と追加観察5場面を再確認。",
+      "evidence": [
+        "v1全場面",
+        "v2重点再テスト",
+        "改訂履歴",
+        "AI役割テスト"
+      ]
+    },
+    {
+      "id": "D-07",
+      "category": "検証",
+      "status": "機械確認済み",
+      "maturity": "品質確認",
+      "title": "60ページPDF品質確認",
+      "quantity": "60 / 60 pages",
+      "summary": "全ページを画像化し、文字切れ、重なり、欠落、ページ番号、表裏の連番を確認。実機の両面試し刷りは未実施。",
+      "evidence": [
+        "全60ページ確認",
+        "表裏28組",
+        "文字切れなし",
+        "試し刷り未実施"
+      ]
+    },
+    {
+      "id": "D-08",
+      "category": "検証",
+      "status": "監査済み",
+      "maturity": "UX監査",
+      "title": "UXデザイナー3名による全体監査",
+      "quantity": "19 findings",
+      "summary": "初心者ジャーニー、学習情報設計、購入前後のサービス体験を独立レビューし、P0 1件・P1 10件・P2 8件へ統合。",
+      "evidence": [
+        "3人の独立レビュー",
+        "UX 5段階",
+        "Double Diamond",
+        "改善は未実装"
+      ]
+    },
+    {
+      "id": "D-09",
+      "category": "運用",
+      "status": "準備完了",
+      "maturity": "運用準備",
+      "title": "販売・公開準備セット",
+      "quantity": "1 launch pack",
+      "summary": "販売ページ、プロフィール案、品質チェック、公開ゲート、週次計測を整備。価格と本人情報、note実画面は最終確認待ち。",
+      "evidence": [
+        "販売ページ",
+        "公開前チェック",
+        "計測テンプレート",
+        "最終承認待ち"
+      ]
+    },
+    {
+      "id": "D-10",
+      "category": "運用",
+      "status": "公開中",
+      "maturity": "公開",
+      "title": "進捗・成果物ダッシュボード",
+      "quantity": "1 public site",
+      "summary": "WBS、タスク、次の行動、成果物の完成度を一つの公開サイトへ統合。スマートフォン表示に対応。",
+      "evidence": [
+        "GitHub Pages",
+        "自動同期",
+        "スマホ対応",
+        "公開用情報のみ"
+      ]
     }
   ]
 };

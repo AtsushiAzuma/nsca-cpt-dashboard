@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const data = window.PROJECT_DATA || { meta: {}, tasks: [], roadmap: [] };
+  const data = window.PROJECT_DATA || { meta: {}, tasks: [], roadmap: [], deliverables: [] };
   const stateLabels = {
     READY: "着手可能",
     DOING: "作業中",
@@ -73,6 +73,39 @@
     }).join("");
   }
 
+  function deliverableTone(item) {
+    if (/未制作|企画/.test(`${item.status} ${item.maturity}`)) return "planned";
+    if (/待ち|準備/.test(`${item.status} ${item.maturity}`)) return "pending";
+    if (/公開/.test(`${item.status} ${item.maturity}`)) return "live";
+    return "complete";
+  }
+
+  function renderDeliverables() {
+    const list = data.deliverables || [];
+    const query = byId("deliverableSearch").value.trim().toLowerCase();
+    const category = byId("deliverableCategory").value;
+    const filtered = list.filter((item) => {
+      const searchable = `${item.title} ${item.summary} ${item.category} ${item.status} ${(item.evidence || []).join(" ")}`.toLowerCase();
+      return (!query || searchable.includes(query)) && (category === "ALL" || item.category === category);
+    });
+
+    byId("deliverableTotal").textContent = list.length;
+    byId("deliverableComplete").textContent = list.filter((item) => !/企画|待ち/.test(`${item.status} ${item.maturity}`)).length;
+    byId("deliverableGrid").innerHTML = filtered.map((item) => `
+      <article class="deliverable-card">
+        <div class="deliverable-card-head">
+          <span class="deliverable-id">${escapeHtml(item.id)}</span>
+          <span class="deliverable-state ${deliverableTone(item)}">${escapeHtml(item.status)}</span>
+        </div>
+        <p class="deliverable-category">${escapeHtml(item.category)} · ${escapeHtml(item.maturity)}</p>
+        <h3>${escapeHtml(item.title)}</h3>
+        <strong class="deliverable-quantity">${escapeHtml(item.quantity)}</strong>
+        <p class="deliverable-copy">${escapeHtml(item.summary)}</p>
+        <div class="deliverable-tags">${(item.evidence || []).map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div>
+      </article>`).join("");
+    byId("deliverableEmpty").hidden = filtered.length > 0;
+  }
+
   function taskCard(task) {
     return `<article class="task-card">
       <div class="task-card-top"><span class="task-id">${escapeHtml(task.id)}</span><span class="priority ${task.priority.toLowerCase()}">${escapeHtml(task.priority)}</span></div>
@@ -137,12 +170,15 @@
 
   function init() {
     renderOverview();
+    renderDeliverables();
     renderWbs();
     renderBoard();
     renderTaskTable();
     setupNavigation();
     byId("taskSearch").addEventListener("input", renderTaskTable);
     byId("statusFilter").addEventListener("change", renderTaskTable);
+    byId("deliverableSearch").addEventListener("input", renderDeliverables);
+    byId("deliverableCategory").addEventListener("change", renderDeliverables);
   }
 
   document.addEventListener("DOMContentLoaded", init);
