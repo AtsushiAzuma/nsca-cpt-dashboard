@@ -5,7 +5,7 @@ window.PROJECT_DATA = {
     "nextTaskId": "T-016",
     "weeklyCapacity": 180,
     "plannedMinutes": 180,
-    "doneCount": 27
+    "doneCount": 28
   },
   "roadmap": [
     {
@@ -150,6 +150,16 @@ window.PROJECT_DATA = {
       "done": "content/ROLEPLAY-PROPOSAL.mdに3名・28回・評価基準と短い試作例を整理。全編未制作",
       "estimate": "45分",
       "dependency": "T-029",
+      "bucket": "追加企画"
+    },
+    {
+      "id": "T-031",
+      "status": "DONE",
+      "priority": "P1",
+      "title": "ロールプレイ教材の両面60ページ設計を作る",
+      "done": "content/ROLEPLAY-PAGE-PLAN.mdに60ページの台割を作成。PDF本体は未制作",
+      "estimate": "30分",
+      "dependency": "T-030",
       "bucket": "追加企画"
     },
     {
