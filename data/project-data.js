@@ -5,7 +5,7 @@ window.PROJECT_DATA = {
     "nextTaskId": "T-016",
     "weeklyCapacity": 180,
     "plannedMinutes": 180,
-    "doneCount": 40
+    "doneCount": 39
   },
   "roadmap": [
     {
@@ -261,16 +261,6 @@ window.PROJECT_DATA = {
       "estimate": "60分",
       "dependency": "T-037",
       "bucket": "追加企画"
-    },
-    {
-      "id": "T-041",
-      "status": "DONE",
-      "priority": "P1",
-      "title": "新PC環境を引継ぎ手順書に沿って構築・検証する",
-      "done": "project/NEW-PC-HANDOFF.md`の移行記録、origin/pages設定、Node.js LTS・npm、PDF・ダッシュボード生成・構文検査・同期確認",
-      "estimate": "—",
-      "dependency": "なし",
-      "bucket": "完了"
     },
     {
       "id": "T-040",
