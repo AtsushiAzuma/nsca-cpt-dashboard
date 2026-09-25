@@ -5,7 +5,7 @@ window.PROJECT_DATA = {
     "nextTaskId": "T-016",
     "weeklyCapacity": 180,
     "plannedMinutes": 180,
-    "doneCount": 36
+    "doneCount": 38
   },
   "roadmap": [
     {
@@ -121,6 +121,16 @@ window.PROJECT_DATA = {
       "estimate": "30分",
       "dependency": "T-014、T-016",
       "bucket": "承認・公開待ち"
+    },
+    {
+      "id": "T-040",
+      "status": "DONE",
+      "priority": "P1",
+      "title": "新PCへの引き継ぎ資料を作成する",
+      "done": "project/NEW-PC-HANDOFF.md`で環境構築、認証、clone、検証、日常運用、旧PC停止条件を確認できる",
+      "estimate": "30分",
+      "dependency": "ユーザーの移行依頼",
+      "bucket": "追加企画"
     },
     {
       "id": "T-039",
@@ -241,6 +251,16 @@ window.PROJECT_DATA = {
       "estimate": "60分",
       "dependency": "T-037",
       "bucket": "追加企画"
+    },
+    {
+      "id": "T-040",
+      "status": "DONE",
+      "priority": "P1",
+      "title": "新PCへの引き継ぎ資料を作成する",
+      "done": "project/NEW-PC-HANDOFF.md`。移行前後のチェックリスト、コマンド、検証、切替・復旧手順",
+      "estimate": "—",
+      "dependency": "なし",
+      "bucket": "完了"
     },
     {
       "id": "T-007",
