@@ -1,11 +1,11 @@
 window.PROJECT_DATA = {
   "meta": {
     "updated": "2026-10-04",
-    "phase": "無料記事3本・有料記事1本と付属物の原稿完成。note初期設定済み、価格・公開原稿の最終承認待ち",
-    "nextTaskId": "T-016",
+    "phase": "note初期設定と価格・公開原稿の最終承認が完了。公開直前のnote実画面確認待ち",
+    "nextTaskId": "T-015",
     "weeklyCapacity": 180,
     "plannedMinutes": 180,
-    "doneCount": 40
+    "doneCount": 41
   },
   "roadmap": [
     {
@@ -48,7 +48,7 @@ window.PROJECT_DATA = {
       "purpose": "品質確認と公開準備",
       "deliverable": "品質チェック、note初期設定、最終原稿",
       "done": "ユーザーが価格と公開原稿を承認している",
-      "progress": 33
+      "progress": 67
     }
   ],
   "tasks": [
@@ -90,16 +90,6 @@ window.PROJECT_DATA = {
       "done": "重大項目がすべて確認済み",
       "estimate": "60分",
       "dependency": "T-011、T-012",
-      "bucket": "承認・公開待ち"
-    },
-    {
-      "id": "T-016",
-      "status": "REVIEW",
-      "priority": "P0",
-      "title": "価格と公開原稿の最終承認を得る",
-      "done": "ユーザーが対象原稿と価格を明示承認",
-      "estimate": "15分",
-      "dependency": "T-015の内容レビュー実施（承認後に最終判定）",
       "bucket": "承認・公開待ち"
     },
     {
@@ -251,6 +241,16 @@ window.PROJECT_DATA = {
       "estimate": "60分",
       "dependency": "T-037",
       "bucket": "追加企画"
+    },
+    {
+      "id": "T-016",
+      "status": "DONE",
+      "priority": "P1",
+      "title": "価格と公開原稿の最終承認を得る",
+      "done": "価格1,680円、無料記事3本、有料記事1本、プロフィール、商品範囲をユーザーが一括承認。`reviews/T-016-APPROVAL.md",
+      "estimate": "—",
+      "dependency": "なし",
+      "bucket": "完了"
     },
     {
       "id": "T-014",
