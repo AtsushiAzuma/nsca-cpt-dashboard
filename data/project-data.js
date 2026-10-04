@@ -5,7 +5,7 @@ window.PROJECT_DATA = {
     "nextTaskId": "T-044",
     "weeklyCapacity": 180,
     "plannedMinutes": 180,
-    "doneCount": 45
+    "doneCount": 46
   },
   "roadmap": [
     {
@@ -251,6 +251,16 @@ window.PROJECT_DATA = {
       "estimate": "60分",
       "dependency": "T-037",
       "bucket": "追加企画"
+    },
+    {
+      "id": "T-047",
+      "status": "DONE",
+      "priority": "P1",
+      "title": "有料記事の学習外負荷を最小化する",
+      "done": "content/paid/ARTICLE.md`、note掲載用生成物、`reviews/T-047-LEARNING-LOAD-REDESIGN.md`。記録を1日1行へ統合し、カード表記、30日分の空欄、時間集計、別ログへの転記を必須運用から除外。公開中の記事は未変更",
+      "estimate": "—",
+      "dependency": "なし",
+      "bucket": "完了"
     },
     {
       "id": "T-043",
@@ -567,11 +577,12 @@ window.PROJECT_DATA = {
       "category": "学習商品",
       "status": "原稿完成",
       "maturity": "完成",
-      "title": "学習支援ツール",
-      "quantity": "5 tools",
-      "summary": "30・60・90分プラン、30日進捗表、復習ログ、遅れた日の復帰ルール、試験前7日チェックを一式化。",
+      "title": "低負荷の学習支援ツール",
+      "quantity": "4 tools",
+      "summary": "30分を標準とする時間別プラン、1日1行の記録、遅れた日の復帰ルール、試験前7日チェックを一式化。",
       "evidence": [
-        "時間別プラン",
+        "1日1行",
+        "別表への転記不要",
         "復習・再開",
         "試験前確認"
       ]
