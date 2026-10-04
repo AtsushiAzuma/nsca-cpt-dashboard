@@ -1,11 +1,11 @@
 window.PROJECT_DATA = {
   "meta": {
     "updated": "2026-10-04",
-    "phase": "note初回公開完了・公開後計測へ移行",
-    "nextTaskId": "R-002",
+    "phase": "無料記事3本をnote下書きへ登録済み・順次公開待ち",
+    "nextTaskId": "T-044",
     "weeklyCapacity": 180,
     "plannedMinutes": 180,
-    "doneCount": 44
+    "doneCount": 45
   },
   "roadmap": [
     {
@@ -81,6 +81,36 @@ window.PROJECT_DATA = {
       "estimate": "60分",
       "dependency": "T-003、T-004",
       "bucket": "今週"
+    },
+    {
+      "id": "T-044",
+      "status": "INBOX",
+      "priority": "P1",
+      "title": "無料記事1本目を公開する",
+      "done": "対象下書き、リンク、公開先を再確認し、ユーザーの投稿指示後に公開URLを記録",
+      "estimate": "30分",
+      "dependency": "T-043",
+      "bucket": "承認・公開待ち"
+    },
+    {
+      "id": "T-045",
+      "status": "INBOX",
+      "priority": "P1",
+      "title": "無料記事2本目を公開する",
+      "done": "1本目の公開後指標を確認し、ユーザーの投稿指示後に公開URLを記録",
+      "estimate": "30分",
+      "dependency": "T-044",
+      "bucket": "承認・公開待ち"
+    },
+    {
+      "id": "T-046",
+      "status": "INBOX",
+      "priority": "P1",
+      "title": "無料記事3本目を公開する",
+      "done": "2本目の公開後指標を確認し、ユーザーの投稿指示後に公開URLを記録",
+      "estimate": "30分",
+      "dependency": "T-045",
+      "bucket": "承認・公開待ち"
     },
     {
       "id": "T-041",
@@ -221,6 +251,16 @@ window.PROJECT_DATA = {
       "estimate": "60分",
       "dependency": "T-037",
       "bucket": "追加企画"
+    },
+    {
+      "id": "T-043",
+      "status": "DONE",
+      "priority": "P1",
+      "title": "無料記事3本をnote下書きへ登録する",
+      "done": "reviews/T-043-NOTE-DRAFTS.md`。編集メモを除外し、横長表をカード化し、有料記事への直接リンクを設定した3本を非公開下書きとして保存",
+      "estimate": "—",
+      "dependency": "なし",
+      "bucket": "完了"
     },
     {
       "id": "T-017",
