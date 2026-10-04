@@ -1,11 +1,11 @@
 window.PROJECT_DATA = {
   "meta": {
     "updated": "2026-10-04",
-    "phase": "初回公開待ち。note実画面の公開前確認まで完了",
-    "nextTaskId": "T-017",
+    "phase": "note初回公開完了・公開後計測へ移行",
+    "nextTaskId": "R-002",
     "weeklyCapacity": 180,
     "plannedMinutes": 180,
-    "doneCount": 43
+    "doneCount": 44
   },
   "roadmap": [
     {
@@ -81,16 +81,6 @@ window.PROJECT_DATA = {
       "estimate": "60分",
       "dependency": "T-003、T-004",
       "bucket": "今週"
-    },
-    {
-      "id": "T-017",
-      "status": "INBOX",
-      "priority": "P1",
-      "title": "noteで初回公開する",
-      "done": "承認済み原稿が公開され、URLが記録されている",
-      "estimate": "30分",
-      "dependency": "T-014、T-015、T-016、T-042",
-      "bucket": "承認・公開待ち"
     },
     {
       "id": "T-041",
@@ -233,11 +223,21 @@ window.PROJECT_DATA = {
       "bucket": "追加企画"
     },
     {
+      "id": "T-017",
+      "status": "DONE",
+      "priority": "P1",
+      "title": "noteで初回公開する",
+      "done": "有料記事を1,680円で公開。公開URL：`https://note.com/atsu_cpt_study/n/n31743ca84c6c`。ログアウト状態で無料範囲、有料境界、13,429字、価格、購入導線を確認",
+      "estimate": "—",
+      "dependency": "なし",
+      "bucket": "完了"
+    },
+    {
       "id": "T-015",
       "status": "DONE",
       "priority": "P1",
       "title": "公開前品質レビューを行う",
-      "done": "reviews/T-015-NOTE-UI-CHECK.md`。note実画面で390×844表示、有料境界、価格1,680円、公式リンク、編集メモ除外を確認。未公開",
+      "done": "reviews/T-015-NOTE-UI-CHECK.md`。note実画面で390×844表示、有料境界、価格1,680円、公式リンク、編集メモ除外を確認。後続のT-017で公開済み",
       "estimate": "—",
       "dependency": "なし",
       "bucket": "完了"
