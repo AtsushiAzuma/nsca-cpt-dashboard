@@ -4,8 +4,8 @@ window.PROJECT_DATA = {
     "phase": "無料記事3本をnote下書きへ登録済み・順次公開待ち",
     "nextTaskId": "T-044",
     "weeklyCapacity": 180,
-    "plannedMinutes": 180,
-    "doneCount": 46
+    "plannedMinutes": 225,
+    "doneCount": 47
   },
   "roadmap": [
     {
@@ -52,6 +52,16 @@ window.PROJECT_DATA = {
     }
   ],
   "tasks": [
+    {
+      "id": "T-048",
+      "status": "DONE",
+      "priority": "P0",
+      "title": "公開中の有料記事へ低負荷版を反映する",
+      "done": "同じ公開URLでタイトル・無料部分・有料本文を改訂し、有料境界、価格1,680円、ログアウト表示を確認する",
+      "estimate": "45分",
+      "dependency": "T-047、ユーザー承認",
+      "bucket": "今週"
+    },
     {
       "id": "T-006",
       "status": "DONE",
