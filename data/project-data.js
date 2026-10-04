@@ -1,11 +1,11 @@
 window.PROJECT_DATA = {
   "meta": {
     "updated": "2026-10-04",
-    "phase": "note初期設定と価格・公開原稿の最終承認が完了。公開直前のnote実画面確認待ち",
-    "nextTaskId": "T-015",
+    "phase": "初回公開待ち。note実画面の公開前確認まで完了",
+    "nextTaskId": "T-017",
     "weeklyCapacity": 180,
     "plannedMinutes": 180,
-    "doneCount": 41
+    "doneCount": 43
   },
   "roadmap": [
     {
@@ -48,7 +48,7 @@ window.PROJECT_DATA = {
       "purpose": "品質確認と公開準備",
       "deliverable": "品質チェック、note初期設定、最終原稿",
       "done": "ユーザーが価格と公開原稿を承認している",
-      "progress": 67
+      "progress": 100
     }
   ],
   "tasks": [
@@ -83,23 +83,13 @@ window.PROJECT_DATA = {
       "bucket": "今週"
     },
     {
-      "id": "T-015",
-      "status": "REVIEW",
-      "priority": "P0",
-      "title": "公開前品質レビューを行う",
-      "done": "重大項目がすべて確認済み",
-      "estimate": "60分",
-      "dependency": "T-011、T-012",
-      "bucket": "承認・公開待ち"
-    },
-    {
       "id": "T-017",
       "status": "INBOX",
       "priority": "P1",
       "title": "noteで初回公開する",
       "done": "承認済み原稿が公開され、URLが記録されている",
       "estimate": "30分",
-      "dependency": "T-014、T-016",
+      "dependency": "T-014、T-015、T-016、T-042",
       "bucket": "承認・公開待ち"
     },
     {
@@ -241,6 +231,26 @@ window.PROJECT_DATA = {
       "estimate": "60分",
       "dependency": "T-037",
       "bucket": "追加企画"
+    },
+    {
+      "id": "T-015",
+      "status": "DONE",
+      "priority": "P1",
+      "title": "公開前品質レビューを行う",
+      "done": "reviews/T-015-NOTE-UI-CHECK.md`。note実画面で390×844表示、有料境界、価格1,680円、公式リンク、編集メモ除外を確認。未公開",
+      "estimate": "—",
+      "dependency": "なし",
+      "bucket": "完了"
+    },
+    {
+      "id": "T-042",
+      "status": "DONE",
+      "priority": "P1",
+      "title": "note非対応の表をスマートフォン向けカード形式へ変換する",
+      "done": "content/paid/NOTE-ARTICLE.md`、`content/paid/NOTE-ARTICLE.html`、`scripts/build-note-article.mjs`。表を項目別カードへ変換しnote下書きへ反映",
+      "estimate": "—",
+      "dependency": "なし",
+      "bucket": "完了"
     },
     {
       "id": "T-016",
