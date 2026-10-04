@@ -1,11 +1,11 @@
 window.PROJECT_DATA = {
   "meta": {
-    "updated": "2026-09-23",
-    "phase": "無料記事3本・有料記事1本と付属物の原稿完成。内容レビュー済み、承認・公開設定待ち",
+    "updated": "2026-10-04",
+    "phase": "無料記事3本・有料記事1本と付属物の原稿完成。note初期設定済み、価格・公開原稿の最終承認待ち",
     "nextTaskId": "T-016",
     "weeklyCapacity": 180,
     "plannedMinutes": 180,
-    "doneCount": 39
+    "doneCount": 40
   },
   "roadmap": [
     {
@@ -48,7 +48,7 @@ window.PROJECT_DATA = {
       "purpose": "品質確認と公開準備",
       "deliverable": "品質チェック、note初期設定、最終原稿",
       "done": "ユーザーが価格と公開原稿を承認している",
-      "progress": 0
+      "progress": 33
     }
   ],
   "tasks": [
@@ -81,16 +81,6 @@ window.PROJECT_DATA = {
       "estimate": "60分",
       "dependency": "T-003、T-004",
       "bucket": "今週"
-    },
-    {
-      "id": "T-014",
-      "status": "BLOCKED",
-      "priority": "P2",
-      "title": "noteアカウントを作成・初期設定する",
-      "done": "URLが記録され、プロフィールが設定されている",
-      "estimate": "30分",
-      "dependency": "T-013",
-      "bucket": "承認・公開待ち"
     },
     {
       "id": "T-015",
@@ -261,6 +251,16 @@ window.PROJECT_DATA = {
       "estimate": "60分",
       "dependency": "T-037",
       "bucket": "追加企画"
+    },
+    {
+      "id": "T-014",
+      "status": "DONE",
+      "priority": "P1",
+      "title": "noteアカウントを作成・初期設定する",
+      "done": "https://note.com/atsu_cpt_study`。メール認証、匿名の表示名・ID、時点付き資格表記、note標準の問い合わせ導線を確認",
+      "estimate": "—",
+      "dependency": "なし",
+      "bucket": "完了"
     },
     {
       "id": "T-040",
